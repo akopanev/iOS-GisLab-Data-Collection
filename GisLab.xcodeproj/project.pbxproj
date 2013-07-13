@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520ADA7B17914E2F00AB528D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADA7A17914E2F00AB528D /* UIKit.framework */; };
+		520ADA7D17914E2F00AB528D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADA7C17914E2F00AB528D /* Foundation.framework */; };
+		520ADA7F17914E2F00AB528D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADA7E17914E2F00AB528D /* CoreGraphics.framework */; };
+		520ADA8717914E2F00AB528D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADA8617914E2F00AB528D /* main.m */; };
+		520ADA8B17914E2F00AB528D /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADA8A17914E2F00AB528D /* GLAppDelegate.m */; };
+		520ADAB21791548C00AB528D /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADA9B1791548C00AB528D /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB31791548C00AB528D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADA9D1791548C00AB528D /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB41791548C00AB528D /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADA9F1791548C00AB528D /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB51791548C00AB528D /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAA11791548C00AB528D /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB61791548C00AB528D /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAA31791548C00AB528D /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB71791548C00AB528D /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAA61791548C00AB528D /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB81791548C00AB528D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAA81791548C00AB528D /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADAB91791548C00AB528D /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAAA1791548C00AB528D /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADABA1791548C00AB528D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAAC1791548C00AB528D /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		520ADABC179154F800AB528D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADABB179154F800AB528D /* SystemConfiguration.framework */; };
+		520ADABE179154FD00AB528D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADABD179154FD00AB528D /* Security.framework */; };
+		520ADAC01791550200AB528D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADABF1791550200AB528D /* MobileCoreServices.framework */; };
+		520ADAC21791550D00AB528D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADAC11791550D00AB528D /* CoreLocation.framework */; };
+		520ADAC41791551300AB528D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520ADAC31791551300AB528D /* MapKit.framework */; };
+		520ADAC71791556C00AB528D /* GLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAC61791556C00AB528D /* GLMainViewController.m */; };
+		520ADACA1791557E00AB528D /* GLMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADAC91791557E00AB528D /* GLMainView.m */; };
+		520ADAFE1791597C00AB528D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520ADAF81791597C00AB528D /* Default-568h@2x.png */; };
+		520ADAFF1791597C00AB528D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520ADAF91791597C00AB528D /* Default.png */; };
+		520ADB001791597C00AB528D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520ADAFA1791597C00AB528D /* Default@2x.png */; };
+		520ADB05179159EA00AB528D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 520ADB03179159EA00AB528D /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520ADA7717914E2F00AB528D /* GisLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GisLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		520ADA7A17914E2F00AB528D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		520ADA7C17914E2F00AB528D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		520ADA7E17914E2F00AB528D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		520ADA8217914E2F00AB528D /* GisLab-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GisLab-Info.plist"; sourceTree = "<group>"; };
+		520ADA8617914E2F00AB528D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		520ADA8817914E2F00AB528D /* GisLab-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GisLab-Prefix.pch"; sourceTree = "<group>"; };
+		520ADA8917914E2F00AB528D /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
+		520ADA8A17914E2F00AB528D /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
+		520ADA9A1791548C00AB528D /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		520ADA9B1791548C00AB528D /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		520ADA9C1791548C00AB528D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		520ADA9D1791548C00AB528D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		520ADA9E1791548C00AB528D /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		520ADA9F1791548C00AB528D /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		520ADAA01791548C00AB528D /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		520ADAA11791548C00AB528D /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		520ADAA21791548C00AB528D /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		520ADAA31791548C00AB528D /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		520ADAA41791548C00AB528D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		520ADAA51791548C00AB528D /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		520ADAA61791548C00AB528D /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		520ADAA71791548C00AB528D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		520ADAA81791548C00AB528D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		520ADAA91791548C00AB528D /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		520ADAAA1791548C00AB528D /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		520ADAAB1791548C00AB528D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		520ADAAC1791548C00AB528D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		520ADABB179154F800AB528D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		520ADABD179154FD00AB528D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		520ADABF1791550200AB528D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		520ADAC11791550D00AB528D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		520ADAC31791551300AB528D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		520ADAC51791556C00AB528D /* GLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMainViewController.h; sourceTree = "<group>"; };
+		520ADAC61791556C00AB528D /* GLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMainViewController.m; sourceTree = "<group>"; };
+		520ADAC81791557E00AB528D /* GLMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMainView.h; sourceTree = "<group>"; };
+		520ADAC91791557E00AB528D /* GLMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLMainView.m; sourceTree = "<group>"; };
+		520ADAF81791597C00AB528D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		520ADAF91791597C00AB528D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		520ADAFA1791597C00AB528D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		520ADB04179159EA00AB528D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		520ADA7417914E2F00AB528D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520ADAC41791551300AB528D /* MapKit.framework in Frameworks */,
+				520ADAC21791550D00AB528D /* CoreLocation.framework in Frameworks */,
+				520ADAC01791550200AB528D /* MobileCoreServices.framework in Frameworks */,
+				520ADABE179154FD00AB528D /* Security.framework in Frameworks */,
+				520ADABC179154F800AB528D /* SystemConfiguration.framework in Frameworks */,
+				520ADA7B17914E2F00AB528D /* UIKit.framework in Frameworks */,
+				520ADA7D17914E2F00AB528D /* Foundation.framework in Frameworks */,
+				520ADA7F17914E2F00AB528D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520ADA6E17914E2F00AB528D = {
+			isa = PBXGroup;
+			children = (
+				520ADA8017914E2F00AB528D /* GisLab */,
+				520ADA7917914E2F00AB528D /* Frameworks */,
+				520ADA7817914E2F00AB528D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		520ADA7817914E2F00AB528D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA7717914E2F00AB528D /* GisLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		520ADA7917914E2F00AB528D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAC31791551300AB528D /* MapKit.framework */,
+				520ADAC11791550D00AB528D /* CoreLocation.framework */,
+				520ADABF1791550200AB528D /* MobileCoreServices.framework */,
+				520ADABD179154FD00AB528D /* Security.framework */,
+				520ADABB179154F800AB528D /* SystemConfiguration.framework */,
+				520ADA7A17914E2F00AB528D /* UIKit.framework */,
+				520ADA7C17914E2F00AB528D /* Foundation.framework */,
+				520ADA7E17914E2F00AB528D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		520ADA8017914E2F00AB528D /* GisLab */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA971791548C00AB528D /* Classes */,
+				520ADA8917914E2F00AB528D /* GLAppDelegate.h */,
+				520ADA8A17914E2F00AB528D /* GLAppDelegate.m */,
+				520ADA8117914E2F00AB528D /* Supporting Files */,
+				520ADAF61791597C00AB528D /* Resources */,
+			);
+			path = GisLab;
+			sourceTree = "<group>";
+		};
+		520ADA8117914E2F00AB528D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA8217914E2F00AB528D /* GisLab-Info.plist */,
+				520ADA8617914E2F00AB528D /* main.m */,
+				520ADA8817914E2F00AB528D /* GisLab-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		520ADA971791548C00AB528D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA981791548C00AB528D /* libs */,
+				520ADAAD1791548C00AB528D /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		520ADA981791548C00AB528D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA991791548C00AB528D /* AFNetworking */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		520ADA991791548C00AB528D /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				520ADA9A1791548C00AB528D /* AFHTTPClient.h */,
+				520ADA9B1791548C00AB528D /* AFHTTPClient.m */,
+				520ADA9C1791548C00AB528D /* AFHTTPRequestOperation.h */,
+				520ADA9D1791548C00AB528D /* AFHTTPRequestOperation.m */,
+				520ADA9E1791548C00AB528D /* AFImageRequestOperation.h */,
+				520ADA9F1791548C00AB528D /* AFImageRequestOperation.m */,
+				520ADAA01791548C00AB528D /* AFJSONRequestOperation.h */,
+				520ADAA11791548C00AB528D /* AFJSONRequestOperation.m */,
+				520ADAA21791548C00AB528D /* AFNetworkActivityIndicatorManager.h */,
+				520ADAA31791548C00AB528D /* AFNetworkActivityIndicatorManager.m */,
+				520ADAA41791548C00AB528D /* AFNetworking.h */,
+				520ADAA51791548C00AB528D /* AFPropertyListRequestOperation.h */,
+				520ADAA61791548C00AB528D /* AFPropertyListRequestOperation.m */,
+				520ADAA71791548C00AB528D /* AFURLConnectionOperation.h */,
+				520ADAA81791548C00AB528D /* AFURLConnectionOperation.m */,
+				520ADAA91791548C00AB528D /* AFXMLRequestOperation.h */,
+				520ADAAA1791548C00AB528D /* AFXMLRequestOperation.m */,
+				520ADAAB1791548C00AB528D /* UIImageView+AFNetworking.h */,
+				520ADAAC1791548C00AB528D /* UIImageView+AFNetworking.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		520ADAAD1791548C00AB528D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAAE1791548C00AB528D /* History */,
+				520ADAB01791548C00AB528D /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		520ADAAE1791548C00AB528D /* History */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAAF1791548C00AB528D /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		520ADAAF1791548C00AB528D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		520ADAB01791548C00AB528D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAB11791548C00AB528D /* Views */,
+				520ADAC51791556C00AB528D /* GLMainViewController.h */,
+				520ADAC61791556C00AB528D /* GLMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		520ADAB11791548C00AB528D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAC81791557E00AB528D /* GLMainView.h */,
+				520ADAC91791557E00AB528D /* GLMainView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		520ADAF61791597C00AB528D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAF71791597C00AB528D /* Images */,
+				520ADAFB1791597C00AB528D /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		520ADAF71791597C00AB528D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				520ADAF81791597C00AB528D /* Default-568h@2x.png */,
+				520ADAF91791597C00AB528D /* Default.png */,
+				520ADAFA1791597C00AB528D /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		520ADAFB1791597C00AB528D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				520ADB02179159EA00AB528D /* ru.lproj */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		520ADB02179159EA00AB528D /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				520ADB03179159EA00AB528D /* Localizable.strings */,
+			);
+			path = ru.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		520ADA7617914E2F00AB528D /* GisLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520ADA9417914E2F00AB528D /* Build configuration list for PBXNativeTarget "GisLab" */;
+			buildPhases = (
+				520ADA7317914E2F00AB528D /* Sources */,
+				520ADA7417914E2F00AB528D /* Frameworks */,
+				520ADA7517914E2F00AB528D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GisLab;
+			productName = GisLab;
+			productReference = 520ADA7717914E2F00AB528D /* GisLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		520ADA6F17914E2F00AB528D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Moqod;
+			};
+			buildConfigurationList = 520ADA7217914E2F00AB528D /* Build configuration list for PBXProject "GisLab" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+			);
+			mainGroup = 520ADA6E17914E2F00AB528D;
+			productRefGroup = 520ADA7817914E2F00AB528D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				520ADA7617914E2F00AB528D /* GisLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		520ADA7517914E2F00AB528D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520ADAFE1791597C00AB528D /* Default-568h@2x.png in Resources */,
+				520ADAFF1791597C00AB528D /* Default.png in Resources */,
+				520ADB001791597C00AB528D /* Default@2x.png in Resources */,
+				520ADB05179159EA00AB528D /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		520ADA7317914E2F00AB528D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520ADA8717914E2F00AB528D /* main.m in Sources */,
+				520ADA8B17914E2F00AB528D /* GLAppDelegate.m in Sources */,
+				520ADAB21791548C00AB528D /* AFHTTPClient.m in Sources */,
+				520ADAB31791548C00AB528D /* AFHTTPRequestOperation.m in Sources */,
+				520ADAB41791548C00AB528D /* AFImageRequestOperation.m in Sources */,
+				520ADAB51791548C00AB528D /* AFJSONRequestOperation.m in Sources */,
+				520ADAB61791548C00AB528D /* AFNetworkActivityIndicatorManager.m in Sources */,
+				520ADAB71791548C00AB528D /* AFPropertyListRequestOperation.m in Sources */,
+				520ADAB81791548C00AB528D /* AFURLConnectionOperation.m in Sources */,
+				520ADAB91791548C00AB528D /* AFXMLRequestOperation.m in Sources */,
+				520ADABA1791548C00AB528D /* UIImageView+AFNetworking.m in Sources */,
+				520ADAC71791556C00AB528D /* GLMainViewController.m in Sources */,
+				520ADACA1791557E00AB528D /* GLMainView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		520ADB03179159EA00AB528D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520ADB04179159EA00AB528D /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		520ADA9217914E2F00AB528D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		520ADA9317914E2F00AB528D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		520ADA9517914E2F00AB528D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GisLab/GisLab-Prefix.pch";
+				INFOPLIST_FILE = "GisLab/GisLab-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		520ADA9617914E2F00AB528D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GisLab/GisLab-Prefix.pch";
+				INFOPLIST_FILE = "GisLab/GisLab-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		520ADA7217914E2F00AB528D /* Build configuration list for PBXProject "GisLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520ADA9217914E2F00AB528D /* Debug */,
+				520ADA9317914E2F00AB528D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520ADA9417914E2F00AB528D /* Build configuration list for PBXNativeTarget "GisLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				520ADA9517914E2F00AB528D /* Debug */,
+				520ADA9617914E2F00AB528D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 520ADA6F17914E2F00AB528D /* Project object */;
+}

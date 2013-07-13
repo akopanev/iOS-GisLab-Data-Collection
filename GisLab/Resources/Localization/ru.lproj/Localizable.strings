@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+"UIK_PLACEHOLDER"		= "Номер УИК (опционально)";
+"EMAIL_PLACEHOLDER"		= "E-Mail (опционально)";
+"NOTE_PLACEHOLDER"		= "Комментарий (опционально)";
+
+"GISLAB_TITLE"			= "GisLab";
