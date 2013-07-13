@@ -16,4 +16,6 @@
 @property (nonatomic, readonly) UITextField		*noteTextField;
 @property (nonatomic, readonly) MKMapView		*mapView;
 
+- (void)showPlusOneAnimation;
+
 @end

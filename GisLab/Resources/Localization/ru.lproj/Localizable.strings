@@ -1,7 +1,21 @@
 /* Localized versions of Info.plist keys */
 
-"UIK_PLACEHOLDER"		= "Номер УИК (опционально)";
-"EMAIL_PLACEHOLDER"		= "E-Mail (опционально)";
-"NOTE_PLACEHOLDER"		= "Комментарий (опционально)";
+// placeholders
+"UIK_PLACEHOLDER"				= "Номер УИК (опционально)";
+"EMAIL_PLACEHOLDER"				= "E-Mail (опционально)";
+"NOTE_PLACEHOLDER"				= "Комментарий (опционально)";
 
-"GISLAB_TITLE"			= "GisLab";
+// general
+"SEND"							= "Отправить";
+"OK"							= "OK";
+"GISLAB_TITLE"					= "GisLab";
+"REPEAT"						= "Повторить";
+"CANCEL"						= "Отмена";
+
+// funny
+"PLUS_ONE"						= "+1";
+
+// alerts
+"ALERT_CANT_DETERMINE_LOCATION"		= "Не удалось определить текущую геопозицию. Проверьте, что Вы разрешили доступ приложению к геоданным в настройках.";
+"ALERT_REQUEST_FAILED"				= "Во время отправки данных произошла ошибка.";
+"ALERT_REQUEST_SUCCEED"				= "Данные успешно добавлены.\nСпасибо!";

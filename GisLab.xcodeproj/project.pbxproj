@@ -32,6 +32,7 @@
 		520ADAFF1791597C00AB528D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 520ADAF91791597C00AB528D /* Default.png */; };
 		520ADB001791597C00AB528D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520ADAFA1791597C00AB528D /* Default@2x.png */; };
 		520ADB05179159EA00AB528D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 520ADB03179159EA00AB528D /* Localizable.strings */; };
+		520ADB0B179177FA00AB528D /* UIAlertViewWithUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 520ADB0A179177FA00AB528D /* UIAlertViewWithUserInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,9 @@
 		520ADAF91791597C00AB528D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		520ADAFA1791597C00AB528D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		520ADB04179159EA00AB528D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
+		520ADB06179167AE00AB528D /* GLConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLConstants.h; sourceTree = "<group>"; };
+		520ADB09179177FA00AB528D /* UIAlertViewWithUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewWithUserInfo.h; sourceTree = "<group>"; };
+		520ADB0A179177FA00AB528D /* UIAlertViewWithUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewWithUserInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			children = (
 				520ADA981791548C00AB528D /* libs */,
 				520ADAAD1791548C00AB528D /* UI */,
+				520ADB06179167AE00AB528D /* GLConstants.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 		520ADA981791548C00AB528D /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				520ADB08179177F900AB528D /* UIAlertViewWithUserInfo */,
 				520ADA991791548C00AB528D /* AFNetworking */,
 			);
 			path = libs;
@@ -272,6 +278,15 @@
 			path = ru.lproj;
 			sourceTree = "<group>";
 		};
+		520ADB08179177F900AB528D /* UIAlertViewWithUserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				520ADB09179177FA00AB528D /* UIAlertViewWithUserInfo.h */,
+				520ADB0A179177FA00AB528D /* UIAlertViewWithUserInfo.m */,
+			);
+			path = UIAlertViewWithUserInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,6 +367,7 @@
 				520ADABA1791548C00AB528D /* UIImageView+AFNetworking.m in Sources */,
 				520ADAC71791556C00AB528D /* GLMainViewController.m in Sources */,
 				520ADACA1791557E00AB528D /* GLMainView.m in Sources */,
+				520ADB0B179177FA00AB528D /* UIAlertViewWithUserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +482,7 @@
 				520ADA9617914E2F00AB528D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
