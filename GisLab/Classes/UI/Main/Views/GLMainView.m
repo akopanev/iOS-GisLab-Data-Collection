@@ -44,6 +44,9 @@
 		
 		_mapView = [[MKMapView alloc] initWithFrame:CGRectZero];
 		[self addSubview:_mapView];
+		
+		_locateMeButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+		[self addSubview:_locateMeButton];
     }
     return self;
 }
@@ -71,6 +74,9 @@
 	float mapW = floorf(self.bounds.size.width - horizontalMargin * 2.0f);
 	float mapH = self.bounds.size.height - mapY - verticalMargin;
 	_mapView.frame = CGRectMake(horizontalMargin, mapY, mapW, mapH);
+	
+	const float locateMeButtonSize = 37.0f;
+	_locateMeButton.frame = CGRectMake(CGRectGetMaxX(_mapView.frame) - 5.0f - locateMeButtonSize, CGRectGetMaxY(_mapView.frame) - 5.0f - locateMeButtonSize, locateMeButtonSize, locateMeButtonSize);
 }
 
 #pragma mark - UITextFieldDelegate
@@ -112,6 +118,7 @@
 	[_emailTextField release];
 	[_noteTextField release];
 	[_mapView release];
+	[_locateMeButton release];
 	[super dealloc];
 }
 

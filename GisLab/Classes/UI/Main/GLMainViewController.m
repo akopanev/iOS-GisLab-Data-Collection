@@ -47,6 +47,7 @@ const int GLMainViewController_FailedRequestAlertTag		 = 1;
 #pragma mark - notifications
 
 - (void)didEnterBackgroundNotification:(NSNotification *)notification {
+	_didShowUserLocation = NO;
 	if ([self isViewLoaded]) {
 		NSString *email = [_mainView.emailTextField text];
 		if (email.length) {
@@ -75,6 +76,7 @@ const int GLMainViewController_FailedRequestAlertTag		 = 1;
 	self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:NSLS(@"SEND") style:UIBarButtonItemStyleBordered target:self action:@selector(submitAction)] autorelease];
 	
 	_mainView = [[GLMainView alloc] initWithFrame:self.view.bounds];
+	[_mainView.locateMeButton addTarget:self action:@selector(locateMeAction) forControlEvents:UIControlEventTouchUpInside];
 	_mainView.emailTextField.text = [self previousEmail];
 	_mainView.mapView.delegate = self;
 	_mainView.mapView.showsUserLocation = YES;
@@ -83,15 +85,25 @@ const int GLMainViewController_FailedRequestAlertTag		 = 1;
 
 #pragma mark - MKMapViewDelegate
 
+- (void)showUserLocation {
+	if (CLLocationCoordinate2DIsValid(_mainView.mapView.userLocation.coordinate)) {
+		[_mainView.mapView setRegion:MKCoordinateRegionMake(_mainView.mapView.userLocation.coordinate, MKCoordinateSpanMake(0.00045, 0.00057)) animated:YES];
+	}
+}
+
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
 	if (NO == _didShowUserLocation) {
 		_didShowUserLocation = YES;
-		[_mainView.mapView setRegion:MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(0.00045, 0.00057)) animated:YES];
+		[self showUserLocation];
 	}
 }
 
 - (void)mapView:(MKMapView *)mapView didFailToLocateUserWithError:(NSError *)error {
-	NSLog(@"%s", __PRETTY_FUNCTION__);
+	NSLog(@"%s error == %@", __PRETTY_FUNCTION__, error);
+	
+	if (error.localizedRecoverySuggestion) {
+		[[[[UIAlertView alloc] initWithTitle:nil message:error.localizedRecoverySuggestion delegate:nil cancelButtonTitle:NSLS(@"OK") otherButtonTitles:nil] autorelease] show];		
+	}
 }
 
 #pragma mark - actions
@@ -141,6 +153,14 @@ const int GLMainViewController_FailedRequestAlertTag		 = 1;
 	}
 }
 
+- (void)locateMeAction {
+	if (nil != _mainView.mapView.userLocation) {
+		[self showUserLocation];
+	} else {
+		[[[[UIAlertView alloc] initWithTitle:nil message:NSLS(@"ALERT_CANT_DETERMINE_LOCATION") delegate:nil cancelButtonTitle:NSLS(@"OK") otherButtonTitles:nil] autorelease] show];
+	}
+}
+
 #pragma mark - requests
 
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
@@ -158,6 +178,7 @@ const int GLMainViewController_FailedRequestAlertTag		 = 1;
 
 - (void)dealloc {
 	[_mainView release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	[super dealloc];
 }
 

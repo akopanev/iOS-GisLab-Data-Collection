@@ -15,6 +15,7 @@
 @property (nonatomic, readonly) UITextField		*emailTextField;
 @property (nonatomic, readonly) UITextField		*noteTextField;
 @property (nonatomic, readonly) MKMapView		*mapView;
+@property (nonatomic, readonly) UIButton		*locateMeButton;
 
 - (void)showPlusOneAnimation;
 
